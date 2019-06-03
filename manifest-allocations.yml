@@ -6,6 +6,6 @@ applications:
     memory: 1G
     instances: 1
     env:
-      REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-kshitij-chhatwani-registrations.apps.pcf.paltraining.perficient.com
+      REGISTRATION_SERVER_ENDPOINT: https://pal-tracker-distributed-kshitij-chhatwani-registrations.apps.pcf.paltraining.perficient.com
     services:
       - tracker-allocations-database
