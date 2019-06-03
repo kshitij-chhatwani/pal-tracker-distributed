@@ -14,7 +14,7 @@ jobs:
   include:
     - stage: build and publish
       language: java
-      jdk: openjdk11
+      jdk: openjdk1.8
       addons:
         mariadb: '10.2'
       install: skip
@@ -37,7 +37,7 @@ jobs:
 
     - stage: build and publish
       language: java
-      jdk: openjdk11
+      jdk: openjdk8
       addons:
         mariadb: '10.2'
       install: skip
@@ -56,7 +56,7 @@ jobs:
 
     - stage: build and publish
       language: java
-      jdk: openjdk11
+      jdk: openjdk8
       addons:
         mariadb: '10.2'
       install: skip
@@ -75,7 +75,7 @@ jobs:
 
     - stage: build and publish
       language: java
-      jdk: openjdk11
+      jdk: openjdk8
       addons:
         mariadb: '10.2'
       install: skip
