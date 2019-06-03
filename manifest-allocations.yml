@@ -1,12 +1,12 @@
 applications:
-- name: tracker-allocations
-  path: ./applications/allocations-server/build/libs/allocations-server.jar
-  routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
-  memory: 1G
-  instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-  services:
-  - tracker-allocations-database
+  - name: tracker-allocations
+    path: ./applications/allocations-server/build/libs/allocations-server.jar
+    routes:
+      - route: pal-tracker-distributed-kshitij-chhatwani-allocations.apps.pcf.paltraining.perficient.com
+    memory: 1G
+    instances: 1
+    env:
+      REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-kshitij-chhatwani-allocations.apps.pcf.paltraining.perficient.com
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    services:
+      - tracker-allocations-database
