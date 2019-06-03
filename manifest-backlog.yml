@@ -7,6 +7,5 @@ applications:
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-kshitij-chhatwani-backlog.apps.pcf.paltraining.perficient.com
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-backlog-database

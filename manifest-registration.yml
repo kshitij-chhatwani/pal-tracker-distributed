@@ -5,7 +5,5 @@ applications:
   - route: pal-tracker-distributed-kshitij-chhatwani-registrations.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
-  env:
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-registration-database
